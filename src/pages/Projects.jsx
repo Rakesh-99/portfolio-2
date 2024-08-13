@@ -38,7 +38,7 @@ const Projects = () => {
     return (
         <>
             <div className="text-center my-10">
-                <h1 className=' text-6xl bg-clip-text bg-gradient-to-r from-green-600 via-cyan-700 to-indigo-500 inline-block text-transparent font-semibold'>Portfolio</h1>
+                <h1 className=' text-6xl bg-clip-text bg-gradient-to-r from-green-600 via-cyan-700 to-indigo-500 inline-block text-transparent font-semibold'>See My Work</h1>
             </div>
 
 

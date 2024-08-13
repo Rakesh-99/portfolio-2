@@ -127,7 +127,7 @@ const Contact = () => {
                 <form
                     ref={form}
                     onSubmit={formSubmitHandle}
-                    className={`flex flex-col gap-4 duration-1000 justify-center lg:w-1/2 md:w-1/2 w-full rounded-md py-4 px-4 shadow-xl  items-center `}>
+                    className={`flex flex-col gap-4 duration-1000 justify-center lg:w-1/2 md:w-1/2 w-full rounded-md py-4 px-4 shadow-md  items-center `}>
 
                     <div className="flex items-center  w-full gap-2">
                         <BiPhoneCall
@@ -143,8 +143,8 @@ const Contact = () => {
                             name='user_name'
                             onChange={inputChangeHandle}
                             type="text"
-                            placeholder='Enter user_name..'
-                            className={`py-2 border-orange-500 transition-all duration-500 px-3 rounded-sm w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '}`}
+                            placeholder='John smith'
+                            className={`py-2 border-orange-500 transition-all duration-500 px-3 rounded-md w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '}`}
                         />
                     </div>
 
@@ -154,8 +154,9 @@ const Contact = () => {
                             autoComplete='off'
                             name='user_email'
                             onChange={inputChangeHandle}
-                            type="user_email" placeholder='Enter user_name..'
-                            className={`py-2 transition-all duration-500 px-3 rounded-sm w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '}`} />
+                            type="user_email"
+                            placeholder='smith@gmail.com'
+                            className={`py-2 transition-all duration-500 px-3 rounded-md w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '}`} />
                     </div>
 
                     <div className=" flex flex-col">
@@ -163,10 +164,10 @@ const Contact = () => {
                         <label className='text-sm font-semibold'>Message</label>
                         <textarea
                             autoComplete='off'
-                            placeholder='Enter your message..'
+                            placeholder='Your message..'
                             onChange={inputChangeHandle}
                             name="message"
-                            className={`py-2 px-3 transition-all duration-500 rounded-sm w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '} `} />
+                            className={`py-2 px-3 transition-all duration-500 rounded-md w-72 lg:w-96 md:w-96 outline-none ${theme === 'dark' ? 'bg-zinc-700 text-white focus:bg-gray-800' : 'bg-gray-200 focus:bg-gray-300 text-gray-800 '} `} />
 
                     </div>
 
