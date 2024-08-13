@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
+import { footerLinks } from '../data/data';
 import { Link } from 'react-router-dom';
 
 
@@ -8,30 +7,15 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 
 
-    const footerLinks = [
-        {
-            link: 'https://github.com/Rakesh-99',
-            icon: FaGithub
 
-        },
-        {
-            link: 'https://www.linkedin.com/in/rakesh-kumar-parida-b142081a9/',
-            icon: FaLinkedin
-        },
-        {
-            link: 'https://www.instagram.com/_rakesh_ku_parida/',
-            icon: FaInstagram
-        },
-        {
-            link: 'https://x.com/kumar_pari23020',
-            icon: FaTwitter
-        },
-
-    ]
 
     return (
         <>
-            <div className="h-32  flex items-center  justify-around  shadow-2xl">
+            <div className="h-32  flex items-center flex-col md:flex-row lg:flex-row  justify-around  shadow-2xl">
+                <p
+                    className='text-sm'>Designed and Developed by
+                    <Link to={'https://github.com/Rakesh-99'} className='font-medium hover:text-blue-400'> Rakesh Kumar Parida</Link>
+                </p>
                 <div className="flex md:gap-20 lg:gap-20 gap-5">
                     {
                         footerLinks.map((val, i) => {
