@@ -20,7 +20,7 @@ const Resume = () => {
 
     return (
 
-        <div className="min-h-screen w-[90%] lg:w-[50%] md:w-[50%] m-auto my-5">
+        <div className=" w-[95%] lg:w-[70%] md:w-[70%] m-auto my-5">
 
             <div className="my-10 text-center">
                 <button onClick={notify} className={`border duration-300 text-sm font-semibold  shadow-md hover:-translate-y-1 rounded-md py-2 px-2  ${theme === 'dark' ? 'border-yellow-500 hover:bg-yellow-500' : ' border-blue-500 hover:bg-indigo-700 hover:text-white'}`}>
@@ -32,7 +32,7 @@ const Resume = () => {
                 <img src={ResumeIMG} alt="Resume" className='rounded-2xl' />
             </div>
 
-            <div className="w-full text-center my-10">
+            <div className="w-full hidden md:block lg:block text-center my-10">
                 <button onClick={notify} className={`border duration-300 text-sm font-semibold  shadow-md hover:-translate-y-1 rounded-md py-2 px-2  ${theme === 'dark' ? 'border-yellow-500 hover:bg-yellow-500' : ' border-blue-500 hover:bg-indigo-700 hover:text-white'}`}>
                     <a href={ResumePDF} download='RakeshResumePdf'>Download CV</a>
                 </button>
