@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
 
-            <div className=" grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
+            <div className="select-none grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
 
 
                 {/* left content  */}
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="w-[75%] m-auto flex justify-center my-5">
+            <div className="select-none w-[75%] m-auto flex justify-center my-5">
                 <h1 className='lg:text-4xl text-xl md:text-4xl font-extralight'>Let me <span className=' bg-clip-text bg-gradient-to-r from-cyan-600 via-yellow-500 to-indigo-400 inline-block text-transparent font-semibold'> introduce</span> myself</h1>
 
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
                 whileInView={{ opacity: 1 }}
             />
 
-            <p className='w-[90%] leading-7  md:w-[75%]  m-auto my-5 text-justify'>
+            <p className='select-none w-[90%] leading-7  md:w-[75%]  m-auto my-5 text-justify'>
                 I fell in love with programming and I have at least learnt something,I think..🤷‍♂️
                 I am fluent in classics like Java & Javascript
                 My field of Interest's are building new Web Technologies and Products.
