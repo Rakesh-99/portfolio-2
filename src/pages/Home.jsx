@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
 
-            <div className="select-none grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
+            <div className="duration-1000 transition-all min-h-screen select-none grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1">
 
 
                 {/* left content  */}
@@ -32,24 +32,27 @@ const Home = () => {
                     <h1 className={`font-semibold md:text-4xl mt-10 ml-5 text-4xl ${theme === 'dark' ? 'text-white' : 'text-gray-800 '}`}> Hi There! <span className=''>👋</span>
 
                         <div>
-                            I'm <span className='font-extralight text-4xltext-lg bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-500 to-yellow-400 inline-block text-transparent'> RAKESH KUMAR PARIDA.</span>
+                            I'm <span className='my-3 font-extralight text-4xltext-lg bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-500 to-yellow-400 inline-block text-transparent'> RAKESH KUMAR PARIDA.</span>
                         </div>
 
-                        <TypeWriterEffect
+                        <TypeWriterEffect 
                             textStyle={{
                                 color: 'rgb(255, 191, 0)',
-                                fontWeight: 900,
+                                fontWeight: 100,
                                 fontSize: '0.9em',
+
 
                             }}
                             startDelay={0}
                             cursorColor="rgb(255, 191, 0)"
 
                             multiText={[
-                                'Mern Stack Developer'
+                                'Frontend Developer',
+                                'with proficient in -',
+                                'React.js & Node.js'
                             ]}
-                            multiTextDelay={2000}
-                            typeSpeed={200}
+                            multiTextDelay={1000}
+                            typeSpeed={100}
                             multiTextLoop
                         />
 
