@@ -18,7 +18,7 @@ const EducationCard = (values) => {
 
     return (
         <>
-            <div className={`flex shadow-2xl border rounded-md flex-col hover:-translate-y-1 py-2 transition-all duration-300  gap-2 ${theme === 'dark' ? 'border-gray-700 hover:shadow-green-800 ' : 'border-gray-300 hover:shadow-green-400 '}`}>
+            <div className={`flex shadow-2xl border rounded-md flex-col px-2 hover:-translate-y-1 my-5 py-2 transition-all duration-300  gap-2 ${theme === 'dark' ? 'border-gray-700 hover:shadow-green-800 ' : 'border-gray-300 hover:shadow-green-400 '}`}>
 
                 <div className="flex justify-center">
                     <h1 className='text-lg  font-semibold'>{values?.collegeName}</h1>
