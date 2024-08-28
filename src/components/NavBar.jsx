@@ -77,7 +77,7 @@ const NavBar = () => {
     return (
         <>
             <nav
-                className={`w-full shadow-2xl border-b md:border-none lg:border-none sticky top-0 left-0 items-center md:h-20 lg:h-20 overflow-hidden    flex-col pl-5 md:pl-0 lg:flex-row md:flex-row  py-4  md:flex lg:flex  transition-all duration-1000 justify-evenly ${hamBurger === true ? 'h-80' : 'h-16'} ${theme === 'light' ? 'bg-blue-50 md:shadow-none lg:shadow-none shadow-blue-100 text-gray-800 ' : 'bg-zinc-800 border-zinc-700  text-gray-200 transition-al md:shadow-none'}`}>
+                className={`w-full z-50 shadow-2xl border-b md:border-none lg:border-none sticky top-0 left-0 items-center md:h-20 lg:h-20 overflow-hidden    flex-col pl-5 md:pl-0 lg:flex-row md:flex-row  py-4  md:flex lg:flex  transition-all duration-1000 justify-evenly ${hamBurger === true ? 'h-80' : 'h-16'} ${theme === 'light' ? 'bg-blue-50 md:shadow-none lg:shadow-none shadow-blue-100 text-gray-800 ' : 'bg-zinc-800 border-zinc-700  text-gray-200 transition-al md:shadow-none'}`}>
 
 
                 <div className=" flex items-center md:gap-10 lg:gap-10 gap-0 justify-between">
