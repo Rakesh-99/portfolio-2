@@ -35,21 +35,20 @@ const Home = () => {
                             I'm <span className='my-3 font-extralight text-4xltext-lg bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-500 to-yellow-400 inline-block text-transparent'> RAKESH KUMAR PARIDA.</span>
                         </div>
 
-                        <TypeWriterEffect 
+                        <TypeWriterEffect
                             textStyle={{
                                 color: 'rgb(255, 191, 0)',
-                                fontWeight: 100,
+                                fontWeight: 500,
                                 fontSize: '0.9em',
-
-
                             }}
                             startDelay={0}
                             cursorColor="rgb(255, 191, 0)"
 
                             multiText={[
-                                'Frontend Developer',
-                                'with proficient in -',
-                                'React.js & Node.js'
+                                'MERN Stack Developer',
+                                'with a passion for',
+                                'crafting eye-catching ',
+                                'and responsive websites.'
                             ]}
                             multiTextDelay={1000}
                             typeSpeed={100}
