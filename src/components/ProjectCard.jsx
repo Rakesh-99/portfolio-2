@@ -46,7 +46,7 @@ const ProjectCard = () => {
                                                 const { icon: Icon, iconName } = getIco;
                                                 return (
                                                     <div className={`flex border rounded-full px-1 py-1 shadow-2xl justify-centr items-center flex-col ${theme === 'dark' ? 'border-gray-700' : 'border-r-gray-400'}`} key={i}>
-                                                        <Icon color={getIco.color} size={25} className='animate-pulse' />
+                                                        <Icon color={getIco.color} size={25} />
                                                     </div>
                                                 )
 
