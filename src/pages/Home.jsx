@@ -39,16 +39,13 @@ const Home = () => {
                             textStyle={{
                                 color: 'rgb(255, 191, 0)',
                                 fontWeight: 500,
-                                fontSize: '0.9em',
+                                fontSize: '0.7em',
                             }}
                             startDelay={0}
                             cursorColor="rgb(255, 191, 0)"
 
                             multiText={[
-                                'MERN Stack Developer',
-                                'with a passion for',
-                                'crafting eye-catching ',
-                                'and responsive websites.'
+                                'Fullstack Stack Developer',
                             ]}
                             multiTextDelay={1000}
                             typeSpeed={100}
