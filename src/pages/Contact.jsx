@@ -121,7 +121,7 @@ const Contact = () => {
 
 
                 <div className="w-[400px] lg:w-1/2 md:w-1/2">
-                    <img src={contactImg} className='w-full' alt="contactImg" />
+                    <img src={contactImg} className='w-96' alt="contactImg" />
                 </div>
 
                 <form
