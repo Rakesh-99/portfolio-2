@@ -30,7 +30,7 @@ const ParticlesComponent = () => {
                         mode: "push",
                     },
                     onHover: {
-                        enable: true,
+                        enable: false,
                         mode: "repulse",
                     },
                 },
@@ -71,7 +71,7 @@ const ParticlesComponent = () => {
                     type: "star",
                 },
                 size: {
-                    value: { min: 0.7, max: 0.9 },
+                    value: { min: 0.2, max: 0.4 },
                 },
             },
             detectRetina: true,
