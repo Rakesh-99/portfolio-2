@@ -24,6 +24,8 @@ import { SiExpress, SiMongodb, SiFirebase } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
+import { SiSanity } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 
 // Tool Icons : 
@@ -54,6 +56,10 @@ export const skillInfo = [
         skillName: 'JavaScript',
         icon: RiJavascriptFill,
 
+    },
+    {
+        skillName: 'Next Js',
+        icon: RiNextjsFill
     },
     {
         skillName: 'TypeScript',
@@ -98,6 +104,10 @@ export const skillInfo = [
         skillName: 'FireBase',
         icon: SiFirebase,
 
+    },
+    {
+        skillName: 'Sanity CMS',
+        icon: SiSanity
     },
     {
         skillName: 'CSS3',
