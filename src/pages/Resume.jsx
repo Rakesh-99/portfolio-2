@@ -1,6 +1,6 @@
 import React from 'react'
-import ResumePDF from '../assets/resume/RKP.pdf';
-import ResumeIMG from '../assets/resume/RKP.png';
+import ResumePDF from '../assets/resume/Rakesh_Parida_s_Resume.pdf';
+import ResumeIMG from '../assets/resume/Rakesh_Parida_s_Resume.jpg';
 import { useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
 
@@ -28,8 +28,8 @@ const Resume = () => {
                 </button>
             </div>
 
-            <div className={`showResume border rounded-2xl px-5 py-5 ${theme === 'dark' ? 'border-gray-700 shadow-2xl shadow-yellow-800' : 'border-gray-200 shadow-xl shadow-blue-300 '} `}>
-                <img src={ResumeIMG} alt="Resume" className='rounded-2xl' />
+            <div className={`showResume border ${theme === 'dark' ? 'border-gray-700 shadow-md shadow-yellow-800' : 'border-gray-200 shadow-md shadow-blue-300 '} `}>
+                <img src={ResumeIMG} alt="Resume" className='' />
             </div>
 
             <div className="w-full hidden md:block lg:block text-center my-10">
