@@ -1,6 +1,5 @@
-import React from 'react'
-import ResumePDF from '../assets/resume/Rakesh_Parida_s_Resume.pdf';
-import ResumeIMG from '../assets/resume/Rakesh_Parida_s_Resume.jpg';
+import ResumePDF from '../assets/resume/Rakesh_updated_resume.pdf';
+import ResumeIMG from '../assets/resume/Rakesh_updated_resume.jpg';
 import { useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
 
