@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <>
-            <div className="h-32  flex items-center flex-col md:flex-row lg:flex-row  justify-around  shadow-2xl">
+            <div className="h-32  py-5  flex items-center flex-col md:flex-row lg:flex-row  justify-around  shadow-2xl">
                 <p
                     className='text-sm'>Designed and Developed by
                     <Link to={'https://github.com/Rakesh-99'} className='font-medium hover:text-blue-400'> Rakesh Kumar Parida</Link>
