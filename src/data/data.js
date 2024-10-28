@@ -16,7 +16,7 @@ import quoteImg1 from '../assets/quoteImg/quoteImg1.png';
 
 
 // Skill Icons
-import { FaCss3, FaCss3Alt, FaGitAlt } from "react-icons/fa6";
+import { FaCss3Alt, FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssLine, RiJavascriptFill } from "react-icons/ri";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNode, FaJava } from "react-icons/fa";
@@ -41,10 +41,62 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 
 
+// Experience tools icons : 
+
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
 
 
 
 
+
+
+// Experience 
+
+export const internshipTechUsed = [
+    {
+        lable: 'React',
+        icon: FaReact,
+        color: '#61dbfb'
+    },
+    {
+        lable: 'Next.js',
+        icon: RiNextjsFill,
+        color: '#fff'
+    },
+    {
+        lable: 'Node.js',
+        icon: FaNodeJs,
+        color: "green"
+    },
+    {
+        label: 'Express.js',
+        icon: SiExpress,
+        color : ""
+    },
+    {
+        lable: 'Tailwind',
+        icon: RiTailwindCssFill,
+        color: "#61dbfb"
+    },
+    {
+        lable: 'MongoDB',
+        icon: DiMongodb,
+        color: "green"
+    },
+    {
+        lable: 'Typescript',
+        icon: SiTypescript,
+        color: "blue"
+    },
+    {
+        lable: 'Sanity',
+        icon: SiSanity,
+        color: "white"
+    }
+]
 
 // Skills 
 export const skillInfo = [
