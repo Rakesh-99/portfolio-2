@@ -1,29 +1,20 @@
-import AboutImg from '../assets/AboutImg.png';
-import { useSelector } from 'react-redux';
-import EducationCard from '../components/EducationCard';
+// import AboutImg from '../assets/AboutImg.png';
+import GithubCalender from '../components/GithubCalender';
 import SkillsAndTools from '../components/SkillsAndTools';
 import { skillInfo, toolsIUse } from '../data/data';
-
+import TimelineEducation from '../components/TimelineEducation';
+import ExperienceTimeline from '../components/ExperienceTimeline';
 
 
 
 
 const About = () => {
 
-
-
-    const educationSlice = useSelector((state) => state.educationSlice);
-
-    const { theme } = useSelector((state) => state.themeToggle);
-
-
-
-
     return (
 
         <div className="select-none px-5 flex flex-col w-[95%] md:w-[75%] m-auto">
 
-            <div className="heroImg w-full  flex justify-center py-5">
+            {/* <div className="heroImg w-full  flex justify-center py-5">
                 <img src={AboutImg} alt="aboutImg" className=' md:w-1/2 lg:h-1/2  w-[500px]:w-56' />
             </div>
 
@@ -40,31 +31,30 @@ const About = () => {
                     I am excited to put my skills to use in a professional setting. I am a quick learner and a team player, and I am confident that I can be a valuable asset to any web development team.
                     Thank You.
                 </p>
+            </div> */}
+
+
+
+            {/* Experience Details  */}
+            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold  bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent '>Experience</h1>
+
+            <div className=" ">
+                <ExperienceTimeline />
             </div>
 
+
+
+
             {/* Education details  */}
-            <hr className='my-10' />
 
-            <h1 className='text-center md:text-8xl lg:text-8xl  text-2xl font-bold  bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent '>Education</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold  bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent '>Education</h1>
 
-
-            <div className=" grid-cols-1 grid md:grid-cols-2 min-h-80 lg:grid-cols-2 my-10 rounded-2xl">
-
-                {
-                    educationSlice && educationSlice.map((values, i) => {
-                        return (
-
-                            <div className=" mx-2" key={i}>
-                                <EducationCard {...values} />
-                            </div>
-                        )
-
-                    })
-                }
+            <div className=" ">
+                <TimelineEducation />
             </div>
 
             {/* Skills  */}
-            <h1 className='text-center md:text-8xl lg:text-8xl  text-2xl font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Skills</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl my-10 font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Skills</h1>
 
             <div className="skill-card">
                 <SkillsAndTools skillsAndToolsData={skillInfo} />
@@ -72,11 +62,18 @@ const About = () => {
 
 
             {/* Tools  */}
-            <h1 className='text-center md:text-8xl lg:text-8xl  text-2xl font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Tools I use</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Tools I use</h1>
 
             <div className="skill-card">
                 <SkillsAndTools skillsAndToolsData={toolsIUse} />
             </div>
+
+
+
+
+            {/* Github calender  */}
+
+            <GithubCalender/>
 
         </div>
 
