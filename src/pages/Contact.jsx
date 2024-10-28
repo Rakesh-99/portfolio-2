@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react'
-import contactImg from '../assets/contactImg.png';
+import { useState, useRef } from 'react'
+import contactImg from '../assets/phoneCall .png';
 import { BiPhoneCall } from "react-icons/bi";
 import { useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
@@ -54,7 +54,7 @@ const Contact = () => {
         } else if (user_name.length > 20) {
             toast.err('*user_name can not contain more than 20 char');
             return false
-        };
+        }
 
         // user_user_email validation : 
         if (!user_email) {
@@ -64,7 +64,7 @@ const Contact = () => {
         } else if (!regex.test(user_email)) {
             toast.error('*Invalid user_user_email entered');
             return
-        };
+        }
 
         // message validation :
 
@@ -77,7 +77,7 @@ const Contact = () => {
         } else if (message.length > 300) {
             toast.error('*message field can not contain more than 300 char');
             return;
-        };
+        }
 
 
         // Sending Mail : 
@@ -120,8 +120,8 @@ const Contact = () => {
             <div className="min-h-screen lg:flex-row md:flex-row flex-col  items-center justify-center md:w-[75%] m-auto flex  gap-5 ">
 
 
-                <div className="w-[400px] lg:w-1/2 md:w-1/2">
-                    <img src={contactImg} className='w-96' alt="contactImg" />
+                <div className="w-full ">
+                    <img src={contactImg} className='' alt="contactImg" />
                 </div>
 
                 <form
@@ -137,7 +137,7 @@ const Contact = () => {
                     </div>
 
                     <div className=" flex flex-col  ">
-                        <label className='text-sm font-semibold'>Name</label>
+                        <label className='text-sm font-semibold'>Name *</label>
                         <input
                             autoComplete='off'
                             name='user_name'
@@ -149,7 +149,7 @@ const Contact = () => {
                     </div>
 
                     <div className=" flex flex-col">
-                        <label className='text-sm font-semibold'>Email</label>
+                        <label className='text-sm font-semibold'>Email *</label>
                         <input
                             autoComplete='off'
                             name='user_email'
@@ -161,7 +161,7 @@ const Contact = () => {
 
                     <div className=" flex flex-col">
 
-                        <label className='text-sm font-semibold'>Message</label>
+                        <label className='text-sm font-semibold'>Message *</label>
                         <textarea
                             autoComplete='off'
                             placeholder='Your message..'
