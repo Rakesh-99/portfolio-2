@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Layout from './components/Layout';
@@ -17,7 +16,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Contact = lazy(() => import('./pages/Contact'));
 const About = lazy(() => import('./pages/About'));
 const Projects = lazy(() => import('./pages/Projects'));
-const Resume = lazy(() => import('./pages/Resume'));
+
 
 
 
@@ -38,7 +37,7 @@ const App = () => {
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/projects' element={<Projects />} />
                   <Route path='/about' element={<About />} />
-                  <Route path='/resume' element={<Resume />} />
+             
                 </Route>
               </Routes>
             </Suspense>

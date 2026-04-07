@@ -26,6 +26,11 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiSanity } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiShadcnui } from "react-icons/si";
+import { SiEjs } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
 
 
 // Tool Icons : 
@@ -57,17 +62,17 @@ import { SiTypescript } from "react-icons/si";
 
 export const internshipTechUsed = [
     {
-        lable: 'React',
+        label: 'React',
         icon: FaReact,
         color: '#61dbfb'
     },
     {
-        lable: 'Next.js',
+        label: 'Next.js',
         icon: RiNextjsFill,
         color: '#fff'
     },
     {
-        lable: 'Node.js',
+        label: 'Node.js',
         icon: FaNodeJs,
         color: "green"
     },
@@ -77,27 +82,80 @@ export const internshipTechUsed = [
         color : ""
     },
     {
-        lable: 'Tailwind',
+        label: 'Tailwind',
         icon: RiTailwindCssFill,
         color: "#61dbfb"
     },
     {
-        lable: 'MongoDB',
+        label: 'MongoDB',
         icon: DiMongodb,
         color: "green"
     },
     {
-        lable: 'Typescript',
+        label: 'Typescript',
         icon: SiTypescript,
         color: "blue"
     },
     {
-        lable: 'Sanity',
+        label: 'Sanity',
         icon: SiSanity,
         color: "white"
     }
 ]
 
+export const vgInfotecExp = [ 
+    {
+        label: 'React',
+        icon: IoLogoReact,
+        color: "#61dbfb"
+    }, 
+    {
+        label: "Node Js",
+        icon: FaNodeJs,
+        color: "green"
+    },
+    { 
+        label: "Express Js",
+        icon: SiExpress,
+        color : ""
+    },
+    {
+        label: "MySQL",
+        icon: SiMysql,
+        color : "#F29111"
+    },
+    {
+        label: "Ejs",
+        icon: SiEjs,
+        color : ""
+    },
+    {
+        label: "Aws",
+        icon: FaAws,
+        color : "#FF9900"
+    },
+    {
+        label: "Git",
+        icon: FaGit,
+        color : ""
+    },
+    {
+        label: "Shadcn",
+        icon: SiShadcnui,
+        color : ""
+    },
+    {
+        label: "Tailwind",
+         icon: RiTailwindCssFill,
+        color: "#61dbfb"
+    },
+    { 
+        label: "Typescript",
+         icon: SiTypescript,
+        color: "#007acce"
+    }
+]
+// React, TypeScript, Node.js, Express.js, MySQL, git and github 
 // Skills 
 export const skillInfo = [
     {
@@ -128,6 +186,10 @@ export const skillInfo = [
         icon: TbBrandRedux
     },
     {
+        skillName: "Aws",
+        icon: FaAws
+    },
+    {
         skillName: 'Tailwind Css',
         icon: RiTailwindCssLine,
 
@@ -136,6 +198,14 @@ export const skillInfo = [
         skillName: 'MongoDB',
         icon: SiMongodb,
 
+    },
+    {
+        skillName: 'Shadcn UI',
+        icon: SiShadcnui,
+    },
+    {
+        skillName : "MySQL",
+        icon : SiMysql
     },
     {
         skillName: 'Node Js',
