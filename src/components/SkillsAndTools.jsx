@@ -15,7 +15,7 @@ const SkillsAndTools = ({ skillsAndToolsData }) => {
 
     return (
         <>
-            <div className="grid gap-3 lg:grid-cols-6 grid-cols-2 md:grid-cols-4 my-14">
+            <div className="grid gap-3 lg:grid-cols-6 grid-cols-3 md:grid-cols-4 my-14">
 
                 {
                     skillsAndToolsData && skillsAndToolsData.map((val, i) => {
