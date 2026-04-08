@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AiOutlineHome } from "react-icons/ai";
 import { FaRegUserCircle, FaRegFileCode } from "react-icons/fa";
 import { TiContacts } from "react-icons/ti";
@@ -20,6 +20,7 @@ const NavBar = () => {
     // const location = useLocation();
     const [toggleThemeIcon, setToggleIcon] = useState(false);
     const [hamBurger, setHamBurger] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const { theme } = useSelector((state) => state.themeToggle)
 
 
@@ -27,6 +28,18 @@ const NavBar = () => {
 
 
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     const navItems = [
         {
             navText: 'Home',
@@ -79,12 +92,12 @@ const NavBar = () => {
     return (
         <>
             <nav
-                className={`w-full z-50 shadow-2xl border-b md:border-none lg:border-none sticky top-0 left-0 items-center md:h-20 lg:h-20 overflow-hidden    flex-col pl-5 md:pl-0 lg:flex-row md:flex-row  py-4  md:flex lg:flex  transition-all duration-300 justify-evenly ${hamBurger === true ? 'h-80' : 'h-16'} ${theme === 'light' ? 'bg-blue-50 md:shadow-none lg:shadow-none shadow-blue-100 text-gray-800 ' : 'bg-zinc-800 border-zinc-700  text-gray-200 transition-al md:shadow-none'}`}>
+                className={`w-full z-50 shadow-2xl border-b md:border-none lg:border-none sticky top-0 left-0 items-center md:h-20 lg:h-20 overflow-hidden    flex-col pl-5 md:pl-0 lg:flex-row md:flex-row  py-4  md:flex lg:flex  transition-all duration-300 justify-evenly ${hamBurger === true ? 'h-80' : 'h-16'} ${theme === 'light' ? 'bg-[#ffffff] md:shadow-none lg:shadow-none shadow-blue-100 text-gray-800 ' : 'bg-zinc-800 border-zinc-700  text-gray-200 transition-al md:shadow-none'} ${scrolled ? 'backdrop-blur-md' : ''} ${scrolled && theme === 'light' ? 'bg-white/20' : scrolled && theme === 'dark' ? 'bg-black/20' : ''}`}>
 
 
 
                 <div className=" flex items-center md:gap-10 lg:gap-10 gap-0 justify-between">
-                    <span onClick={() => scroll.scrollToTop()} className={`font-bold cursor-pointer`}>Rakesh's Portfolio</span>
+                    <span onClick={() => scroll.scrollToTop()} className={`font-bold cursor-pointer`}>Rakesh Parida</span>
 
                     {/* hamburger icon  */}
                     <button onClick={() => toggleThemeBtn()} className='rounded-full px-1 py-1 transition-all duration-150'>

@@ -9,7 +9,7 @@ const ThemeProvider = ({ children }) => {
 
     return (
         <>
-            <div className={`transition-all duration-1000 ${theme === 'light' ? 'bg-blue-50 text-gray-800' : 'bg-zinc-800 text-gray-200'}`}>
+            <div className={`transition-all duration-1000 ${theme === 'light' ? 'bg-[#ffffff] text-gray-800' : 'bg-zinc-800 text-gray-200'}`}>
                 {children}
             </div>
         </>

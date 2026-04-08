@@ -279,10 +279,7 @@ export const footerLinks = [
         link: 'https://www.linkedin.com/in/rakesh-kumar-parida-b142081a9/',
         icon: FaLinkedin
     },
-    {
-        link: 'https://www.instagram.com/_rakesh_ku_parida/',
-        icon: FaInstagram
-    },
+
     {
         link: 'https://x.com/kumar_pari23020',
         icon: FaTwitter

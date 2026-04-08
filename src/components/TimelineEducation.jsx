@@ -45,7 +45,7 @@ const TimelineEducation = () => {
         return (
           <TimelineItem 
             key={index}
-            position={isMobile ? "right" : index % 2 === 0 ? "left" : "right"}
+            position={isMobile ? "right" : index % 2 === 0 ? "right" : "left"}
             sx={{
               minHeight: 'initial',
               paddingTop: isMobile ? '8px' : 'initial',
