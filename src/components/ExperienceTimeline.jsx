@@ -3,18 +3,23 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { PiLaptopDuotone } from "react-icons/pi";
 import Typography from '@mui/material/Typography';
 import { internshipTechUsed, vgInfotecExp } from "../data/data";
 import { IoLocationOutline } from "react-icons/io5";
 import { useTheme, useMediaQuery } from "@mui/material";
+import { useSelector } from 'react-redux';
+import {motion } from 'motion/react'; 
+
+
+
 
 const ExperienceTimeline = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const isTablet = useMediaQuery(theme.breakpoints.down("lg"));
+  const muiTheme = useTheme();
+  const theme = useSelector((state) => state.themeToggle.theme);
+  const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
+  const isTablet = useMediaQuery(muiTheme.breakpoints.down("lg"));
 
   const experiences = [
     {
@@ -22,7 +27,7 @@ const ExperienceTimeline = () => {
       fullTime: true,
       period: "Feb 2025 - Present",
       role: "Full-Stack Developer",
-      location: "Rajkot, Gujarat",
+      location: "Rajkot, Gujarat (On-site)",
       techStack: vgInfotecExp,
       achievements: [
         "Integrated external trading APIs (Charles Schwab, E*TRADE) to fetch real-time stock and options data.",
@@ -36,7 +41,7 @@ const ExperienceTimeline = () => {
       fullTime: false,
       period: "Sep 2024 - Dec 2024",
       role: "Mern-Stack Developer",
-      location: "Maharashtra, India",
+      location: "Maharashtra, India (Remote)",
       techStack: internshipTechUsed,
       achievements: [
         "Designed a threaded comment system supporting nested replies, improving user engagement across posts.",
@@ -47,7 +52,7 @@ const ExperienceTimeline = () => {
 
   return (
     <Timeline 
-      position={isMobile ? "right" : "alternate"}
+      position="right"
       sx={{
         padding: isMobile ? '0' : 'initial',
         margin: isMobile ? '0' : 'initial',
@@ -57,28 +62,13 @@ const ExperienceTimeline = () => {
       {experiences.map((exp, index) => (
         <TimelineItem 
           key={index} 
-          position={isMobile ? "right" : index % 2 === 0 ? "right" : "left"}
+          position="right"
           sx={{
             minHeight: 'initial',
             paddingTop: isMobile ? '8px' : 'initial',
             paddingBottom: isMobile ? '8px' : 'initial',
           }}
         >
-          {!isMobile && (
-            <TimelineOppositeContent
-              sx={{
-                flex: 1,
-                padding: 2,
-                m: 'auto 0',
-              }}
-              align="right"
-              variant="body2"
-              className="text-gray-400"
-            >
-              <span className="text-xs sm:text-sm">{exp.period}</span>
-            </TimelineOppositeContent>
-          )}
-
           <TimelineSeparator >
             <TimelineConnector />
             <TimelineDot  sx={{ backgroundColor: "green" }}>
@@ -90,10 +80,8 @@ const ExperienceTimeline = () => {
           <TimelineContent sx={{ 
             py: { xs: 1.5, sm: 3 }, 
             px: { xs: 0.5, sm: 2 },
-            ...(isMobile && {
-              flex: '1 1 100%',
-              width: '100%',
-            })
+            flex: '1 1 100%',
+            width: '100%',
           }}>
             <div className="flex flex-col">
               {/* Title and Date for Mobile */}
@@ -109,11 +97,9 @@ const ExperienceTimeline = () => {
                     {exp.title.split(' ').slice(1).join(' ')}
                   </span>
                 </Typography>
-                {isMobile && (
-                  <span className='text-gray-400 text-[11px] sm:text-xs whitespace-nowrap'>
-                    {exp.period}
-                  </span>
-                )}
+                <span className='text-gray-400 text-[11px] sm:text-xs whitespace-nowrap text-right md:text-sm'>
+                  {exp.period}
+                </span>
               </div>
 
               {/* Location */}
@@ -162,19 +148,22 @@ const ExperienceTimeline = () => {
                     isMobile ? "grid-cols-5" : isTablet ? "grid-cols-6" : "grid-cols-8"
                   }`}
                 >
-                  {exp.techStack.map((val, idx) => (
-                    <div
-                      className="flex flex-col items-center justify-center"
-                      key={idx}
-                    >
-                      <p style={{ color: `${val.color}` }} className="flex items-center justify-center">
-                        <val.icon size={isMobile ? 16 : isTablet ? 22 : 25} />
-                      </p>
-                      <p className='text-center mt-0.5 text-[9px] sm:text-[10px] md:text-xs line-clamp-2'>
-                        {val.label}
-                      </p>
-                    </div>
-                  ))}
+                          {exp.techStack.map((val, idx) => {
+                    const isThemedLogo = /next|sanity/i.test(val.label);
+                    const iconColor = isThemedLogo ? (theme === 'dark' ? '#ffffff' : '#000000') : (val.color || 'inherit');
+                    return (
+                      <div
+                        className="flex flex-col items-center justify-center"
+                        key={idx}
+                      >
+                        <p style={{ color: iconColor }} className="flex items-center justify-center">
+                          <val.icon size={isMobile ? 16 : isTablet ? 22 : 25} />
+                        </p>
+                        <p className='text-center mt-0.5 text-[9px] sm:text-[10px] md:text-xs line-clamp-2'>
+                          {val.label}
+                        </p>
+                      </div>
+                    )})}
                 </div>
               </div>
             </div>

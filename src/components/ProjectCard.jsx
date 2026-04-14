@@ -1,4 +1,3 @@
-import React from 'react'
 import { majorProjects, miniProjects } from '../data/data';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';

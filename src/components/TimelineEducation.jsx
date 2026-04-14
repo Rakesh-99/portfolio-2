@@ -33,7 +33,7 @@ const TimelineEducation = () => {
 
   return (
     <Timeline 
-      position={isMobile ? "right" : "alternate"}
+      position="right"
       sx={{
         padding: isMobile ? '0' : 'initial',
         margin: isMobile ? '0' : 'initial',
@@ -45,28 +45,13 @@ const TimelineEducation = () => {
         return (
           <TimelineItem 
             key={index}
-            position={isMobile ? "right" : index % 2 === 0 ? "right" : "left"}
+            position="right"
             sx={{
               minHeight: 'initial',
               paddingTop: isMobile ? '8px' : 'initial',
               paddingBottom: isMobile ? '8px' : 'initial',
             }}
           >
-            {!isMobile && (
-              <TimelineOppositeContent
-                sx={{
-                  flex: 1,
-                  padding: 2,
-                  m: 'auto 0',
-                }}
-                align="right"
-                variant="body2"
-                className="text-gray-400"
-              >
-                <span className="text-xs sm:text-sm">{edu.year}</span>
-              </TimelineOppositeContent>
-            )}
-            
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot sx={{ backgroundColor: "green" }}>
@@ -78,10 +63,8 @@ const TimelineEducation = () => {
             <TimelineContent sx={{ 
               py: { xs: 1.5, sm: 3 }, 
               px: { xs: 0.5, sm: 2 },
-              ...(isMobile && {
-                flex: '1 1 100%',
-                width: '100%',
-              })
+              flex: '1 1 100%',
+              width: '100%',
             }}>
               <div className="flex justify-between items-start gap-1 md:gap-2 mb-1 md:mb-2">
                 <Typography 
@@ -92,11 +75,9 @@ const TimelineEducation = () => {
                 >
                   {edu.degree}
                 </Typography>
-                {isMobile && (
-                  <span className='text-gray-400 text-[11px] sm:text-xs whitespace-nowrap'>
-                    {edu.year}
-                  </span>
-                )}
+                <span className='text-gray-400 text-[11px] sm:text-xs whitespace-nowrap text-right md:text-sm'>
+                  {edu.year}
+                </span>
               </div>
               <Typography 
                 sx={{ fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" } }}
