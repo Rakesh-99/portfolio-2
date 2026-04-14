@@ -111,7 +111,7 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={formSubmitHandle}
-        className={`flex flex-col gap-4 duration-1000 justify-center lg:w-1/2 md:w-1/2 w-full rounded-md py-4 px-4 shadow-sm items-center`}
+        className={`flex flex-col gap-5`}
       >
         <div className="flex items-center justify-center w-full gap-2">
           <BiPhoneCall size={26} color="orange" />

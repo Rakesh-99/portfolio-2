@@ -27,7 +27,7 @@ const Home = () => {
             {/* Home Section */}
             <section id="home" className="mx-auto flex lg:flex-row flex-col lg:place-items-start place-items-center  max-w-[70rem]">
                 {/* left content  */}
-                <div className="lg:mt-32 mt-10 xl:ml-0 ml-2">
+                <div className="lg:mt-32 mt-10 xl:ml-0 mx-3">
                     <h1 className='lg:text-[4rem]  text-[2rem]'>Hi there! I'm Rakesh.</h1>
                     
                     <div className="lg:text-xl text-base font-[400]">
@@ -40,7 +40,7 @@ const Home = () => {
                 {/* right  */}
                 <div className="">
                     <div className="">
-                        <img src={HeroImg} className='lg:max-w-[500px] max-w-[420px]' alt="heroImg" />
+                        <img src={HeroImg} className='lg:max-w-[500px] max-h-[400px]' alt="heroImg" />
                     </div>
                 </div>
             </section>
