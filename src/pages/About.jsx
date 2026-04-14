@@ -36,7 +36,7 @@ const About = () => {
 
 
             {/* Experience Details  */}
-            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold  bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent '>Experience</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold'>Experience</h1>
 
             <div className=" ">
                 <ExperienceTimeline />
@@ -47,14 +47,14 @@ const About = () => {
 
             {/* Education details  */}
 
-            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold  bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent '>Education</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl my-10  text-4xl font-bold'>Education</h1>
 
             <div className=" ">
                 <TimelineEducation />
             </div>
 
             {/* Skills  */}
-            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl my-10 font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Skills</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl my-10 font-bold '>Skills</h1>
 
             <div className="skill-card">
                 <SkillsAndTools skillsAndToolsData={skillInfo} />
@@ -62,7 +62,7 @@ const About = () => {
 
 
             {/* Tools  */}
-            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl font-bold bg-clip-text bg-gradient-to-r from-orange-500 via-green-500 to-violet-600 inline-block text-transparent'>Tools I use</h1>
+            <h1 className='text-center md:text-6xl lg:text-6xl  text-4xl font-bold'>Tools I use</h1>
 
             <div className="skill-card">
                 <SkillsAndTools skillsAndToolsData={toolsIUse} />

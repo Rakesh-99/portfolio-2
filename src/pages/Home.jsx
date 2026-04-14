@@ -40,7 +40,7 @@ const Home = () => {
                 {/* right  */}
                 <div className="">
                     <div className="">
-                        <img src={HeroImg} className='lg:max-w-[500px] max-h-[400px]' alt="heroImg" />
+                        <img src={HeroImg} className='lg:max-w-[450px] ' alt="heroImg" />
                     </div>
                 </div>
             </section>

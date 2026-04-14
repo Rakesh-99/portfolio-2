@@ -114,8 +114,8 @@ const Contact = () => {
         className={`flex flex-col gap-5`}
       >
         <div className="flex items-center justify-center w-full gap-2">
-          <BiPhoneCall size={26} color="orange" />
-          <h1 className="text-2xl font-semibold bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-400 inline-block text-transparent">
+          <BiPhoneCall size={26}  />
+          <h1 className="text-2xl font-semibold ">
             Contact
           </h1>
         </div>
