@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0d0f12"/>
+
+  <!-- Glow -->
+  <rect x="0" y="0" width="64" height="64" fill="#7f9efe" opacity="0.08"/>
+
+  <!-- Code Brackets -->
+  <path d="M24 20 L16 32 L24 44" stroke="#7f9efe" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 20 L48 32 L40 44" stroke="#7f9efe" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Center Dot (you / core logic) -->
+  <circle cx="32" cy="32" r="3" fill="#ffffff"/>
+
+  <!-- Subtle underline -->
+  <rect x="20" y="46" width="24" height="2" rx="1" fill="#2a2f3a"/>
+</svg>
