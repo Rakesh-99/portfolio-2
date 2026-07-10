@@ -334,31 +334,7 @@ export const majorProjects = [
         liveLink: 'https://blog-draft19.vercel.app/',
         source: 'https://github.com/Rakesh-99/Fullstack-Blog-App'
     },
-    {
-        _id: 122,
-        projectTitle: 'React Portfolio',
-        projectDescription: 'My personal portfolio showcases my skills and accomplishments as a web developer. It was built using React, a powerful JavaScript library for building user interfaces, to create an interactive and visually appealing web presence.',
-        projectImages: [portfolioImg1],
-        techIcons: [
-            {
-                iconName: 'React.Js',
-                icon: IoLogoReact,
-                color: '#61dbfb'
-            },
-            {
-                iconName: 'Tailwind',
-                icon: RiTailwindCssLine,
-                color: '61dbfb'
-            },
-            {
-                iconName: 'Css3',
-                icon: FaCss3Alt,
-                color: 'blue'
-            }
-        ],
-        liveLink: 'https://rakesh99.vercel.app/',
-        source: 'https://github.com/Rakesh-99/Portfolio'
-    },
+   
     {
         _id: 123,
         projectTitle: 'School Management System',
