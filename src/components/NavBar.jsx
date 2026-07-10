@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { AiOutlineHome } from "react-icons/ai";
-import { FaRegUserCircle, FaRegFileCode } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 import { TiContacts } from "react-icons/ti";
 import { AiTwotoneProject } from "react-icons/ai";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
@@ -136,7 +136,7 @@ const NavBar = () => {
                                         onClick={handleHamToggle}
                                         className='text-sm active:scale-95 transition-all font-semibold cursor-pointer'
                                         spy={true}
-                                        activeClass="md:border-b lg:border-b bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline text-transparent"
+                                        activeClass="md:border-b lg:border-b bg-clip-text bg-gradient-to-r from-white via-yellow-500 to-white inline text-transparent"
                                     >
                                         {navText}
                                     </ScrollLink>

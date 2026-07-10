@@ -54,7 +54,7 @@ const TimelineEducation = () => {
           >
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot sx={{ backgroundColor: "green" }}>
+              <TimelineDot sx={{ backgroundColor: "gray" }}>
                 <IconComponent sx={{ fontSize: isMobile ? 18 : 24 }} />
               </TimelineDot>
               <TimelineConnector />

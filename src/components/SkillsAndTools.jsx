@@ -24,11 +24,11 @@ const SkillsAndTools = ({ skillsAndToolsData }) => {
                         return (
                             <div
                                 key={i}
-                                className={`flex  rounded-2xl hover:shadow-2xl py-2  hover:animate-pulse hover:scale-95 duration-500 cursor-pointer  flex-col justify-center items-center ${theme === 'dark' ? ' hover:green-600 hover:shadow-green-500' : ' hover:shadow-blue-500'}`}
+                                className={`flex transition-all rounded-lg duration-100 hover:shadow-lg py-2 cursor-pointer  flex-col justify-center items-center ${theme === 'dark' ? ' hover:shadow-yellow-900' : ' hover:shadow-yellow-200'}`}
                             >
 
-                                <Icon size={40} />
-                                <p className='font-medium  lg:text-lg text-sm'>{skillName}</p>
+                                <Icon size={30} />
+                                <p className='font-medium  lg:text-sm text-sm'>{skillName}</p>
                             </div>
                         )
                     })

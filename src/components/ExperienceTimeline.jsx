@@ -23,9 +23,9 @@ const ExperienceTimeline = () => {
 
   const experiences = [
     {
-      title: "Vg Infotec",
+      title: "ThinkerSky Technologies ",
       fullTime: true,
-      period: "Feb 2025 - Present",
+      period: "Feb 2025 - July  2026",
       role: "Full-Stack Developer",
       location: "Rajkot, Gujarat (On-site)",
       techStack: vgInfotecExp,
@@ -71,7 +71,7 @@ const ExperienceTimeline = () => {
         >
           <TimelineSeparator >
             <TimelineConnector />
-            <TimelineDot  sx={{ backgroundColor: "green" }}>
+            <TimelineDot  sx={{ backgroundColor: "gray" }}>
               <PiLaptopDuotone  sx={{ fontSize: isMobile ? 18 : 24 }} />
             </TimelineDot>
             <TimelineConnector />
@@ -93,7 +93,7 @@ const ExperienceTimeline = () => {
                   sx={{ fontSize: { xs: "0.95rem", sm: "1.1rem", md: "1.25rem" } }}
                 >
                   <span>{exp.title.split(' ')[0]} </span>
-                  <span className='border-b-2 border-green-500 inline-block'>
+                  <span className='border-b-2 border-yellow-500 inline-block'>
                     {exp.title.split(' ').slice(1).join(' ')}
                   </span>
                 </Typography>
@@ -138,7 +138,7 @@ const ExperienceTimeline = () => {
 
             {/* Tech Stack Section */}
             <div className="mt-3 sm:mt-4  text-left md:mt-5">
-              <span className='font-bold border py-1 px-2 rounded-xl border-green-500 text-[11px] sm:text-xs md:text-sm'>
+              <span className='font-bold border py-1 px-2 rounded-xl border-yellow-500 text-[11px] sm:text-xs md:text-sm'>
                 Tech Stack
               </span>
 
