@@ -4,6 +4,7 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { useSelector } from 'react-redux'
 import toast from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
+import { Loader, Send } from 'lucide-react'
 
 const Contact = () => {
   const form = useRef(null)
@@ -28,7 +29,7 @@ const Contact = () => {
   const validationRules = [
     {
       validate: (values) => !values.user_name.trim(),
-      message: 'Name is required.',
+      message:  'All fileds are required.',
     },
     {
       validate: (values) => values.user_name.trim().length < 2,
@@ -40,7 +41,7 @@ const Contact = () => {
     },
     {
       validate: (values) => !values.user_email.trim(),
-      message: 'Email is required.',
+      message: ' ALl fileds are required.',
     },
     {
       validate: (values) => !isValidEmail(values.user_email),
@@ -48,7 +49,7 @@ const Contact = () => {
     },
     {
       validate: (values) => !values.message.trim(),
-      message: 'Message is required.',
+      message: 'All fields are required.',
     },
     {
       validate: (values) => values.message.trim().length < 20,
@@ -175,7 +176,21 @@ const Contact = () => {
           disabled={isSending}
           className="bg-gradient-to-r hover:shadow-orange-600 shadow-2xl transition-all duration-500 from-red-500 to-orange-500 py-2 text-gray-300 text-sm font-semibold px-10 rounded-sm active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSending ? 'Sending...' : 'Send message'}
+          {isSending ? 
+          
+          <div className="flex gap-3 items-center justify-center">
+          <Loader size={20} className='animate-spin'/>
+          <span>Sending ..</span>
+          </div>
+         
+          : 
+          
+          <div className="flex items-center justify-center gap-3">
+            <Send size={16} className=''/>
+
+            <span>Send Message</span>
+          </div>
+          }
         </button>
       </form>
     </div>
