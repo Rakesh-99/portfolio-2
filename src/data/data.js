@@ -331,8 +331,8 @@ export const majorProjects = [
                 color: '#68a063'
             }
         ],
-        liveLink: 'https://blog-draft19.vercel.app/',
-        source: 'https://github.com/Rakesh-99/Fullstack-Blog-App'
+        liveLink: 'https://blog-draftcode.vercel.app/',
+        source: 'https://github.com/Rakesh-99/draft-code'
     },
    
     {
