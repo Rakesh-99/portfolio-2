@@ -67,7 +67,7 @@ const NavBar = () => {
         // },
         {
             navText: 'Blog',
-            to: 'https://blog-draft19.vercel.app',
+            to: 'https://blog-draftcode.vercel.app/',
             icon: RiBloggerLine,
             isScroll: false
         },
